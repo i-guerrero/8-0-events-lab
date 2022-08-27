@@ -21,7 +21,7 @@ const colorPalette = document.querySelectorAll(".color");
 const currentColor = document.querySelector("#current-color");
 
 for (let color of colorPalette) {
-  color.addEventListener("click", (event) => {
+  color.addEventListener("mousedown", (event) => {
     const backgroundColorDeclarationStr =
       "background: " + event.target.style.backgroundColor;
     currentColor.setAttribute("style", backgroundColorDeclarationStr);
